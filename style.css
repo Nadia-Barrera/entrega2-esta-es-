@@ -1,0 +1,554 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:"overpass";
+    src: url(fonts/static/Overpass-Black.ttf) format("truetype");
+    font-weight: 900;
+}
+@font-face {
+    font-family:"overpass";
+    src:url(fonts/static/Overpass-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family:"overpass";
+    src: url(fonts/static/Overpass-Light.ttf) format("truetype");
+    font-weight: 100;
+}
+
+    /* inicio */
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.body__menu{
+    background-color: #ffffffe2;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+}
+
+/*----- Header----- */
+
+.header{
+    background-color: #0f0f0f;
+    height: 100px;
+}
+
+.header__logo{
+    filter: drop-shadow(0px 1px 1px #fff);
+    width: 65px;
+
+}
+
+
+/* --------nav------ */
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+
+}
+
+.nav{
+    position: absolute;
+    left: 60%;
+    top: 50px;
+
+}
+
+.nav__ul-item{
+    list-style-type: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+.item__link{
+    text-decoration: none;
+    font-family: overpass;
+    font-size: 0.7em;
+    font-weight: 900;
+    color: #ffffffe2;
+    margin-right:20px;
+    transition: 0.2s;
+}
+
+.item__link:hover{
+    opacity: 80%;
+    transition: 0.2s;
+    position: sticky;
+}
+
+
+/* --------main------ */
+
+.main{
+    margin-bottom: 0px;
+}
+
+.main__div{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    background-color: #0f0f0f;
+}
+
+
+.h1__inicio{
+    font-size: 4em;
+    color: #eeecece8;
+    margin-top: 80px;
+}
+
+.section__div{
+    display: flex;
+    border: 1px solid red;
+}
+
+.grid__container{
+    display: grid;
+    margin: 40px 100px 0px 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,200px);
+    grid-template-areas:
+    "item3 item3 item2 item2"
+    "item3 item3 item2 item2"
+    "item1 item1 item1 item1"
+    "item1 item1 item1 item1";
+    gap: 30px;
+}
+
+.grid__item1{
+grid-area: item1;
+background-image:url(assets/invierno/abrigodelana.jpg);
+background-size: cover;
+}
+
+.grid__item2{
+grid-area: item2;
+background-image: url(assets/invierno/poleranegra.jpg);
+background-size: cover;
+width: 100%;
+}
+
+.grid__item3{
+grid-area: item3;
+background-image: url(assets/invierno/sweater-marron.jpg);
+background-size: cover;
+width: 100%;
+
+}
+
+
+      /*----------- fooooter---------- */
+
+.footer{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom:0;
+    width: 100%;
+    height:70px;
+    background-color: #0f0f0f;
+    text-align: center;
+    color: #ffffffe2;
+}
+
+.div__ig{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.ig__link{
+    text-decoration: none;
+    font-family: overpass;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffffe2;
+    margin-top: 15px;
+}
+
+.footer__link{
+    position: absolute;
+    text-align: center;
+
+}
+
+.copyright{
+    background-color: #0f0f0f;
+    color: #ffffffe2;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+}
+
+.logo-wpp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+ /* ----------pagina invierno--------- */
+
+.body__invierno{
+    background-color: #0f0f0f;
+    box-sizing: border-box;
+}
+
+.header__invierno{
+    background-color: #ffffffe2;
+    height: 100px;
+    width: 100%;
+}
+
+.item__link-invierno{
+    color: #0f0f0f;
+}
+
+.item__link-invierno:hover{
+    color: #504e4e
+}
+
+.main__div-invierno{
+    background-color: #ffffffe2;
+}
+
+.h1__invierno{
+    color: #0f0f0f;
+}
+
+
+.footer__invierno{
+    background-color: #ffffffe2;
+}
+
+.copyright__invierno{
+    background-color: #ffffffe2;
+    color: #0f0f0f;
+}
+.ig__link-invierno{
+    color: #0f0f0f
+}
+
+
+/* ----main----- */
+
+.h2__inicio{
+    margin: 40px;
+    font-family: overpass;
+    font-weight: 100;
+    text-align: center;
+    font-size: 2em;
+    color: #0f0f0f;
+
+}
+
+.section__h2{
+    text-align: center;
+    margin: 30px 0 30px 0;
+    color: #ffffffe2;
+    font-family: overpass;
+    font-weight: 100;
+    font-size: 2em;
+    
+}
+
+.section__carrousel{
+    justify-content: center;
+}
+
+.carousel{
+    margin: 0 300px 0 300px;
+    width: 60%;
+}
+
+.carousel-item{
+    height: 500px;
+}
+
+.d-block{
+    width: 50px;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+/* -----------------------------------------contacto-------------------------- */
+
+
+
+.body__contact{
+    background-image: url(assets/contacto/fondobody.jpg);
+    background-size: cover;
+}
+
+.section__contacto{
+    margin: 0 150px 0 150px;
+}
+
+
+.section__titulo{
+    font-family: overpass;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.container__contacto{
+    display: flex;
+    background-color: #ffffffe2;
+    border-radius: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.contacto__input{
+    width: 450px;
+    padding: 20px;
+    align-items: center;
+}
+
+.contacto__input>input{
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom:1px solid black;
+    font-family: overpass;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    background-color: #0000;
+}
+
+.contacto__message{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+textarea{
+    min-width: 300px;
+    max-width: 300px;
+    outline: none;
+    height: 100%;
+    border: none;
+    border-bottom:1px solid black;
+    margin-top: 38px;
+    margin-bottom: 40px;
+    font-family: overpass;
+    font-weight: 100; 
+    letter-spacing: 0.1em;
+    background-color: #0000;
+
+}
+
+.div__boton{
+    position: relative;
+}
+
+.boton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background-color: #ffffffe2;
+    background-image: url(assets/contacto/file\ \(1\).png);
+    background-size:40px 40px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 40px;
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.boton:hover{
+    padding: 33px 43px;
+    transition: 0.4s;
+    background-color: #eeecece8;
+}
+
+
+
+
+/* -------------------------------nosotros------------- */
+
+.main__nosotros{
+    background-image: url(assets/contacto/fondobody.jpg);
+    background-size: cover;
+}
+
+.div__nosotros{
+    font-family: overpass;
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+
+.parrafo__nosotros{
+    text-align: center;
+    margin: 40px 0 40px 0;
+    padding: 30px;
+    font-size: 1.5em;
+}
+
+/* ----------------------media------------- */
+
+@media(max-width:667px) {
+    .h2__inicio {
+        margin: 20px;  
+        font-size: 1.5em;}/* Tamaño más pequeño para móviles */ 
+}
+.carousel {  
+    margin: 0 20px; /* Reducción de márgenes en móviles */  
+    width: 90%; /* Más ancho en móviles */  
+}  
+
+
+.contacto__input {  
+    width: 100%; /* Expandir en dispositivos más pequeños */  
+}  
+
+.contacto__input > input,  
+textarea {  
+    width: 90%; /* Ajuste de ancho */  
+}  
+
+.boton {  
+    padding: 15px;  
+    width: 35px; /* Tamaño de botón más pequeño */  
+    height: 28px; /* Ajustar altura */  
+}  
+.container__contacto{
+    flex-direction: column;
+}
+
+
+
+
+
+
+/* ---- Tablet Styles ----- */  
+@media (min-width: 667px) and (max-width: 769px) {  
+.h2__inicio {  
+    font-size: 2.5em; /* Tamaño intermedio */  
+}  
+
+.carousel {  
+    margin: 0 50px; /* Márgenes intermedios */  
+    width: 80%;  
+}  
+
+
+.contacto__input {  
+    width: 80%; /* Ancho adecuado para tabletas */  
+}  
+
+.contacto__input > input,  
+textarea {  
+    width: 80%; /* Ancho consistente */  
+}  
+
+.boton {  
+    padding: 20px;  
+    width: 38px; /* Tamaño de botón mediano */  
+    height: 30px;  
+}  
+
+.grid__container {  
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para tabletas */  
+}  
+}  
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .h2__inicio {  
+        font-size: 2.5em; }/* Tamaño intermedio */  
+    }  
+    
+    .carousel {  
+        margin: 0 50px; /* Márgenes intermedios */  
+        width: 80%;  
+    }  
+    
+    .item__link {  
+        font-size: 0.5em;
+     /* Tamaño de fuente ligeramente más pequeño */  
+    }  
+    
+    .contacto__input {  
+        width: 80%; /* Ancho adecuado para tabletas */  
+    }  
+    
+    .contacto__input > input,  
+    textarea {  
+        width: 80%; /* Ancho consistente */  
+    }  
+    
+    .boton {  
+        padding: 20px;  
+        width: 38px; /* Tamaño de botón mediano */  
+        height: 30px;  
+    }  
+    
+    .grid__container {  
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas para tabletas */  
+    }  
+
+
+
+
+
+
+
+/* ---- Desktop Styles ----- */  
+@media (min-width: 1025px) {  
+.h2__inicio {  
+    font-size: 3em; /* Tamaño de fuente más grande en escritorio */  
+}  
+
+.carousel {  
+    margin: 0 300px;  
+    width: 60%; /* Ancho para escritorio */  
+}  
+
+.item__link {  
+    font-size: 0.8em; /* Tamaño de fuente normal */  
+}  
+
+.contacto__input {  
+    width: 450px; /* Mantener ancho original en escritorio */  
+}  
+
+.contacto__input > input,  
+textarea {  
+    width: 300px; /* Ancho original para escritorio */  
+}  
+
+.boton {  
+    padding: 30px;  
+    width: 40px; /* Tamaño de botón original */  
+    height: 30px;  
+}  
+
+.grid__container {  
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas para escritorio */  
+}  
+} 
+.container__contacto{
+    flex-direction: row;
+}
