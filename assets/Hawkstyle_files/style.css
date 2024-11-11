@@ -6,18 +6,18 @@
 
 @font-face {
     font-family:"overpass";
-    src: url(fonts/static/Overpass-Black.ttf) format("truetype");
+    src: url(../fonts/static/Overpass-Black.ttf) format("truetype");
     font-weight: 900;
 }
 @font-face {
     font-family:"overpass";
-    src:url(fonts/static/Overpass-Medium.ttf) format("truetype");
+    src:url(../fonts/static/Overpass-Medium.ttf) format("truetype");
     font-weight: 500;
 }
 
 @font-face {
     font-family:"overpass";
-    src: url(fonts/static/Overpass-Light.ttf) format("truetype");
+    src: url(../fonts/static/Overpass-Light.ttf) format("truetype");
     font-weight: 100;
 }
 
@@ -25,6 +25,7 @@
 html,body{
     margin: 0;
     padding: 0;
+    font-family: overpass;
 }
 
 .body__menu{
@@ -51,19 +52,18 @@ html,body{
 /* --------nav------ */
 
 .container{
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px;
-
+    width: 100%;
 }
 
 .nav{
     position: absolute;
-    left: 60%;
+    justify-content:end;
+    width: 100%;
     top: 50px;
-
 }
 
 .nav__ul-item{
@@ -105,9 +105,10 @@ html,body{
 
 
 .h1__inicio{
-    font-size: 4em;
+    font-size: 3em;
     color: #eeecece8;
     margin-top: 80px;
+    letter-spacing: 5px;
 }
 
 .section__div{
@@ -130,20 +131,20 @@ html,body{
 
 .grid__item1{
 grid-area: item1;
-background-image:url(assets/invierno/abrigodelana.jpg);
+background-image:url(../assets/invierno/abrigodelana.jpg);
 background-size: cover;
 }
 
 .grid__item2{
 grid-area: item2;
-background-image: url(assets/invierno/poleranegra.jpg);
+background-image: url(../assets/invierno/poleranegra.jpg);
 background-size: cover;
 width: 100%;
 }
 
 .grid__item3{
 grid-area: item3;
-background-image: url(assets/invierno/sweater-marron.jpg);
+background-image: url(../assets/invierno/sweater-marron.jpg);
 background-size: cover;
 width: 100%;
 
@@ -194,25 +195,31 @@ width: 100%;
 
 .logo-wpp{
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 20px;
+    transition: transform 0.7s;
 }
 
+.logo-wpp:hover{
+    transform: rotate(360deg) scale(105%);
+    transition: 1.5s;
 
- /* ----------pagina invierno--------- */
+}
+
+ /* ----------pagina invierno-verano------- */
+
 
 .body__invierno{
     background-color: #0f0f0f;
     box-sizing: border-box;
 }
 
-.header__invierno{
+.header__blanco{
     background-color: #ffffffe2;
-    height: 100px;
     width: 100%;
 }
 
-.item__link-invierno{
+.item__link-negro{
     color: #0f0f0f;
 }
 
@@ -287,7 +294,7 @@ width: 100%;
 
 
 .body__contact{
-    background-image: url(assets/contacto/fondobody.jpg);
+    background-image: url(../assets/contacto/fondobody.jpg);
     background-size: cover;
 }
 
@@ -300,7 +307,7 @@ width: 100%;
     font-family: overpass;
     text-align: center;
     margin: 30px 0 30px 0;
-    font-weight: 100;
+    font-weight: 100vh;
     font-size: 2em;
 }
 
@@ -367,17 +374,17 @@ textarea{
     background-size:40px 40px ;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px 40px;
-    width: 40px;
+    padding: 30px;
+    width: 30px;
     height: 30px;
-    border-radius: 50%;
+    border-radius: 100%;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.6s;
 }
 
 .boton:hover{
-    padding: 33px 43px;
-    transition: 0.4s;
+    transform: rotate(40deg);
+    transition: 0.5s;
     background-color: #eeecece8;
 }
 
@@ -387,7 +394,7 @@ textarea{
 /* -------------------------------nosotros------------- */
 
 .main__nosotros{
-    background-image: url(assets/contacto/fondobody.jpg);
+    background-image: url(../assets/contacto/fondobody.jpg);
     background-size: cover;
 }
 
@@ -408,147 +415,3 @@ textarea{
 }
 
 /* ----------------------media------------- */
-
-@media(max-width:667px) {
-    .h2__inicio {
-        margin: 20px;  
-        font-size: 1.5em;}/* Tamaño más pequeño para móviles */ 
-}
-.carousel {  
-    margin: 0 20px; /* Reducción de márgenes en móviles */  
-    width: 90%; /* Más ancho en móviles */  
-}  
-
-
-.contacto__input {  
-    width: 100%; /* Expandir en dispositivos más pequeños */  
-}  
-
-.contacto__input > input,  
-textarea {  
-    width: 90%; /* Ajuste de ancho */  
-}  
-
-.boton {  
-    padding: 15px;  
-    width: 35px; /* Tamaño de botón más pequeño */  
-    height: 28px; /* Ajustar altura */  
-}  
-.container__contacto{
-    flex-direction: column;
-}
-
-
-
-
-
-
-/* ---- Tablet Styles ----- */  
-@media (min-width: 667px) and (max-width: 769px) {  
-.h2__inicio {  
-    font-size: 2.5em; /* Tamaño intermedio */  
-}  
-
-.carousel {  
-    margin: 0 50px; /* Márgenes intermedios */  
-    width: 80%;  
-}  
-
-
-.contacto__input {  
-    width: 80%; /* Ancho adecuado para tabletas */  
-}  
-
-.contacto__input > input,  
-textarea {  
-    width: 80%; /* Ancho consistente */  
-}  
-
-.boton {  
-    padding: 20px;  
-    width: 38px; /* Tamaño de botón mediano */  
-    height: 30px;  
-}  
-
-.grid__container {  
-    grid-template-columns: repeat(2, 1fr); /* Dos columnas para tabletas */  
-}  
-}  
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .h2__inicio {  
-        font-size: 2.5em; }/* Tamaño intermedio */  
-    }  
-    
-    .carousel {  
-        margin: 0 50px; /* Márgenes intermedios */  
-        width: 80%;  
-    }  
-    
-    .item__link {  
-        font-size: 0.5em;
-     /* Tamaño de fuente ligeramente más pequeño */  
-    }  
-    
-    .contacto__input {  
-        width: 80%; /* Ancho adecuado para tabletas */  
-    }  
-    
-    .contacto__input > input,  
-    textarea {  
-        width: 80%; /* Ancho consistente */  
-    }  
-    
-    .boton {  
-        padding: 20px;  
-        width: 38px; /* Tamaño de botón mediano */  
-        height: 30px;  
-    }  
-    
-    .grid__container {  
-        grid-template-columns: repeat(2, 1fr); /* Dos columnas para tabletas */  
-    }  
-
-
-
-
-
-
-
-/* ---- Desktop Styles ----- */  
-@media (min-width: 1025px) {  
-.h2__inicio {  
-    font-size: 3em; /* Tamaño de fuente más grande en escritorio */  
-}  
-
-.carousel {  
-    margin: 0 300px;  
-    width: 60%; /* Ancho para escritorio */  
-}  
-
-.item__link {  
-    font-size: 0.8em; /* Tamaño de fuente normal */  
-}  
-
-.contacto__input {  
-    width: 450px; /* Mantener ancho original en escritorio */  
-}  
-
-.contacto__input > input,  
-textarea {  
-    width: 300px; /* Ancho original para escritorio */  
-}  
-
-.boton {  
-    padding: 30px;  
-    width: 40px; /* Tamaño de botón original */  
-    height: 30px;  
-}  
-
-.grid__container {  
-    grid-template-columns: repeat(3, 1fr); /* Tres columnas para escritorio */  
-}  
-} 
-.container__contacto{
-    flex-direction: row;
-}
