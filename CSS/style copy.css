@@ -1,0 +1,630 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:"overpass";
+    src: url(../fonts/static/Overpass-Black.ttf) format("truetype");
+    font-weight: 900;
+}
+@font-face {
+    font-family:"overpass";
+    src:url(../fonts/static/Overpass-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family:"overpass";
+    src: url(../fonts/static/Overpass-Light.ttf) format("truetype");
+    font-weight: 100;
+}
+
+    /* inicio */
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: overpass;
+}
+
+.body__menu{
+    background-color: #ffffffe2;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+}
+
+/*----- Header----- */
+
+.header{
+    background-color: #0f0f0f;
+    height: 100px;
+}
+
+.header__logo{
+    filter: drop-shadow(0px 1px 1px #fff);
+    width: 65px;
+}
+
+/* --------nav------ */
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+}
+
+.nav{
+    position: absolute;
+    justify-items:right;
+    width: 100%;
+    top: 45px;
+    margin-left:-85px;
+}
+
+
+.nav__ul-item{
+    list-style-type: none;
+    padding: 15px;
+    display: inline-block;
+}
+
+.item__link{
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 900;
+    color: #ffffffe2;
+    margin-right:20px;
+    transition: 0.2s;
+}
+
+.item__link:hover{
+    opacity: 80%;
+    transition: 0.2s;
+    position: sticky;
+}
+/* ---------------links-mobile-------------- */
+.item__link-resp{
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 900;
+    color: #ffffffe2;
+    margin-right:20px;
+    transition: 0.2s;
+}
+
+.item__link-resp:focus{
+    opacity: 70%;
+}
+
+
+.link_ver-inv{
+    color: #0f0f0f;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 900;
+    margin-right:20px;
+    transition: 0.2s;
+}
+.link_ver-inv:hover{
+    opacity: 80%;
+    transition: 0.2s;
+    position: sticky;
+}
+
+.resp_inv-ver{
+    color: #0f0f0f;
+}
+.resp_inv-ver:focus{
+    opacity: 70%;
+}
+/* --------------------------------------------- */
+
+.menu_hamburguesa{
+    display: none
+}
+
+.list-icon{
+    display: none;
+}
+
+
+
+
+/* --------main------ */
+
+.main{
+    margin-bottom: 0px;
+}
+
+.main__div{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    background-color: #0f0f0f;
+}
+
+
+.h1__inicio{
+    font-size: 3em;
+    font-weight: bold;
+    color: #eeecece8;
+    margin-top: 80px;
+    letter-spacing: 5px;
+}
+
+.section__div{
+    display: flex;
+    border: 1px solid red;
+}
+
+.grid__container{
+    display: grid;
+    margin: 40px 100px 0px 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,200px);
+    grid-template-areas:
+    "item3 item3 item2 item2"
+    "item3 item3 item2 item2"
+    "item1 item1 item1 item1"
+    "item1 item1 item1 item1";
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.grid__item1{
+grid-area: item1;
+background-image:url(../assets/invierno/abrigodelana.jpg);
+background-size: cover;
+}
+
+.grid__item2{
+grid-area: item2;
+background-image: url(../assets/invierno/poleranegra.jpg);
+background-size: cover;
+width: 100%;
+}
+
+.grid__item3{
+grid-area: item3;
+background-image: url(../assets/invierno/sweater-marron.jpg);
+background-size: cover;
+width: 100%;
+
+}
+
+
+      /*----------- fooooter---------- */
+
+.footer{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom:0;
+    width: 100%;
+    height:70px;
+    background-color: #0f0f0f;
+    text-align: center;
+    color: #ffffffe2;
+}
+
+.div__ig{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.ig__link{
+    text-decoration: none;
+    font-family: overpass;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffffe2;
+    margin-top: 15px;
+}
+
+.footer__link{
+    position: absolute;
+    text-align: center;
+
+}
+
+.copyright{
+    background-color: #0f0f0f;
+    color: #ffffffe2;
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+}
+
+.logo-wpp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: 0.7s;
+}
+
+.logo-wpp:hover{
+    transform: rotate(360deg) scale(105%);
+    transition: 1.5s;
+
+}
+
+ /* ----------pagina invierno-verano------- */
+
+
+
+.body__invierno{
+    background-color: #0f0f0f;
+    box-sizing: border-box;
+}
+
+.body__verano{
+    background-color: #d2a7a7;
+}
+
+.header__blanco{
+    background-color: #ffffffe2;
+    width: 100%;
+}
+
+.link_ver-inv{
+    color: #0f0f0f;
+
+}
+
+.item__link-invierno:hover{
+    color: #504e4e
+}
+
+.main__div-invierno{
+    background-color: #ffffffe2;
+}
+
+.h1__invierno{
+    color: #0f0f0f;
+}
+
+
+.footer__invierno{
+    background-color: #ffffffe2;
+}
+
+.copyright__invierno{
+    background-color: #ffffffe2;
+    color: #0f0f0f;
+}
+.ig__link-invierno{
+    color: #0f0f0f
+}
+
+
+/* ----main----- */
+
+.h2__inicio{
+    margin: 40px;
+    font-family: overpass;
+    font-weight: 100;
+    text-align: center;
+    font-size: 2em;
+    color: #0f0f0f;
+
+}
+
+.section__h2{
+    text-align: center;
+    margin: 30px 0 30px 0;
+    color: #ffffffe2;
+    font-family: overpass;
+    font-weight: 100;
+    font-size: 2em;
+    
+}
+
+.section{
+    display: flex;
+}
+
+.carrousel__completo{
+    width: 100%;
+    display: inline-block;
+}
+
+.d-block{
+    height: 500px;
+}
+
+.slide{
+    margin-top: 10px;
+}
+
+.slide img{
+    width: 65vh;
+}
+
+
+/* -----------------------------------------contacto-------------------------- */
+
+
+
+.body__contact{
+    background-image: url(../assets/contacto/fondobody.jpg);
+    background-size: cover;
+}
+
+.section__contacto{
+    margin: 0 150px 0 150px;
+}
+
+
+.section__titulo{
+    font-family: overpass;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-weight: 100vh;
+    font-size: 2em;
+}
+
+.container__contacto{
+    display: flex;
+    background-color: #ffffffe2;
+    border-radius: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.contacto__input{
+    width: 450px;
+    padding: 20px;
+    align-items: center;
+}
+
+.contacto__input>input{
+    padding: 10px;
+    margin: 20px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-bottom:1px solid black;
+    font-family: overpass;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    background-color: #0000;
+}
+
+.contacto__message{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+textarea{
+    min-width: 300px;
+    max-width: 300px;
+    outline: none;
+    height: 100%;
+    border: none;
+    border-bottom:1px solid black;
+    margin-top: 38px;
+    margin-bottom: 40px;
+    font-family: overpass;
+    font-weight: 100; 
+    letter-spacing: 0.1em;
+    background-color: #0000;
+
+}
+
+.div__boton{
+    position: relative;
+}
+
+.boton{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    background-color: #ffffffe2;
+    background-image: url(../assets/contacto/file\ \(1\).png);
+    background-size:40px 40px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.boton:hover{
+    transform: rotate(40deg);
+    transition: 0.5s;
+    background-color: #eeecece8;
+}
+
+
+
+
+/* -------------------------------nosotros------------- */
+
+.main__nosotros{
+    background-image: url(../assets/contacto/fondobody.jpg);
+    background-size: cover;
+}
+
+.div__nosotros{
+    font-family: overpass;
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+
+.parrafo__nosotros{
+    text-align: center;
+    margin: 40px 0 40px 0;
+    padding: 30px;
+    font-size: 1.5em;
+}
+
+/* ----------------------media------------- */
+
+@media screen and (max-width: 768px){
+    .nav{
+        display: none;
+    }
+    .header__logo{
+        position: fixed;
+        top: 0;
+        left: 10px;
+        width: 50px;
+    }
+
+    .h1__inicio{
+        font-size: 2.2em;
+    }
+
+    .nav__ul-item{
+        width: 100%;
+        position: absolute;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item__link{
+        color: rgb(255, 255, 255);
+        display: flex;
+        letter-spacing: 0.3em;
+    
+        
+    }
+
+    .list-icon{
+        color:#eeecece8;
+        margin-right: 10px;
+        margin-top: 10px;
+        display: flex;
+    }
+    .label__hamburguesa{
+        display: flex;
+        position:absolute;
+
+    }
+    .menu_hamburguesa{
+        position: absolute;  
+    }
+
+    .container_nav{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 40px;
+        justify-content: end;
+        
+    }
+
+    .nav_hamburguesa{
+        height: 50vh;
+        width: 100vw;
+        display: block;
+        background-color: #0f0f0f;
+        align-content: center;
+        margin-top: 30px;
+
+}
+    .menu_hamburguesa{
+    display: none;
+}
+/* ------------------------- main---------- */
+.main__div{
+    height: 270px;
+}
+.grid__container{
+    margin: 0;
+    gap: 0;
+    grid-template-areas:
+    "item3 item3 item3  item3"
+    "item2 item2 item2 item2"
+    "item1 item1 item1 item1";
+    grid-template-rows: repeat(3,300px);
+    gap: 30px;
+    margin-bottom: 30px;
+
+}
+/* ------------verano-invierno---- */
+.nav_hamburguesa-v{
+    background-color: #f8f3f3;
+}
+.nav_hamburguesa-i{
+    background-color: #e3e4e5;
+}
+
+.nav-invierno{
+    display: none;
+}
+.nav-verano{
+    display: none;
+}
+
+.item__link-negro{
+    color: red;
+}
+/* ---------------footer-------- */
+.copyright{
+    font-size: 0.7em;
+}
+
+/* ---------nosotros---------- */
+.parrafo__nosotros{
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+
+}
+
+.menu_hamburguesa:not(:checked) ~ .nav_hamburguesa{
+        display: none;
+
+
+}
+
+.nav__item{
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height:50px;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+
+/* ------------------------- main---------- */
+    /* .main__div{
+        height: 270px;
+    }
+    .grid__container{
+        margin: 0;
+        gap: 0;
+        grid-template-areas:
+        "item3 item3 item3  item3"
+        "item2 item2 item2 item2"
+        "item1 item1 item1 item1";
+        grid-template-rows: repeat(3,300px);
+        gap: 30px;
+        margin-bottom: 30px;
+    } */
+    /* ---------------footer-------- */
+    .copyright{
+        font-size: 0.7em;
+    }
+
