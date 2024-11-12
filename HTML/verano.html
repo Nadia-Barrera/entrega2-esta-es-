@@ -8,25 +8,47 @@
         <link rel="icon" href="../assets/logo2.png" type="imag/png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
-    <body class="body__invierno">
+    <body class="body__invierno body__verano">
             <header class="header header__blanco">
                 <!-- logo de la pagina-->
-                
-                    <div class="container">
+                <nav>
+                <div class="container_nav">
+                    <label class="label__hamburguesa" for="menu_hamburguesa">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        width="35" 
+                        height="35" 
+                        fill="currentColor" 
+                        class="list-icon" 
+                        viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </label>
+                    <input type="checkbox" name="" id="menu_hamburguesa" class="menu_hamburguesa">
+                    <div class="nav_hamburguesa nav_hamburguesa-v">
+                        <ul class="nav__item"><a class="item__link-resp resp_inv-ver" href="../index.html">inicio</a></ul>
+                        <ul class="nav__item"><a class="item__link-resp resp_inv-ver" href="invierno.html">invierno</a></ul>
+                        <ul class="nav__item"><a class="item__link-resp resp_inv-ver" href="verano.html">verano</a></ul>
+                        <ul class="nav__item"><a class="item__link-resp resp_inv-ver" href="contacto.html">contacto</a></ul>
+                        <ul class="nav__item"><a class="item__link-resp resp_inv-ver" href="nosotros.html">nosotros</a></ul>
+                        
+                    </div>
+                </div>
+                    <div class="header__container">
                         <img class="header__logo" src="../assets/logo2.png" alt="logo de tienda">
         
                         <div class="nav-verano">
                         <ul class="nav__ul">
-                            <li class="nav__ul-item"><a class="item__link item__link-negro" href="../index.html">inicio</a></li>
-                            <li class="nav__ul-item"><a class="item__link item__link-negro" href="invierno.html">invierno</a></li>
-                            <li class="nav__ul-item"><a class="item__link item__link-negro" href="verano.html">verano</a></li>
-                            <li class="nav__ul-item"><a class="item__link item__link-negro" href="contacto.html">contacto</a></li>
-                            <li class="nav__ul-item"><a class="item__link item__link-negro" href="nosotros.html">nosotros</a></li>
+                            <li class="nav__ul-item"><a class="link_ver-inv" href="../index.html">inicio</a></li>
+                            <li class="nav__ul-item"><a class="link_ver-inv" href="invierno.html">invierno</a></li>
+                            <li class="nav__ul-item"><a class="link_ver-inv" href="verano.html">verano</a></li>
+                            <li class="nav__ul-item"><a class="link_ver-inv" href="contacto.html">contacto</a></li>
+                            <li class="nav__ul-item"><a class="link_ver-inv" href="nosotros.html">nosotros</a></li>
                         </ul>
                         </div>
                     </div>
-        
+                </nav>
             </header>
+
     <main class="main">
             <div class="main__div main__div-invierno">
                 <h1 class="h1__inicio h1__invierno">
@@ -35,31 +57,28 @@
             </div>
             <h2 class="section__h2">ROPA VERANO</h2>
             <section class="section__carrousel">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../assets/invierno/0d13630ef3e2a510bb04a01f78ae6d2e.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/invierno/62ada72c97826550c7e074bfe3952494.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../assets/invierno/abrigodelana.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
+                <div class="carrousel__completo">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="../assets/verano//pixlr-image-generator-21349a6a-b1f6-412f-9168-b09fd6c4d4fb.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../assets/verano/pixlr-image-generator-0a8fbe7e-e571-48dc-90e0-f80be244a52c.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../assets/verano/pixlr-image-generator-561761be-a9fb-4a84-8fd1-82a7f865249c.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
                 </div>
             </section>
     </main>

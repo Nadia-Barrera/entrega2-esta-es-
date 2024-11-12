@@ -45,13 +45,11 @@ html,body{
 .header__logo{
     filter: drop-shadow(0px 1px 1px #fff);
     width: 65px;
-
 }
-
 
 /* --------nav------ */
 
-.container{
+.header__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,8 +61,8 @@ html,body{
     position: absolute;
     justify-items:right;
     width: 100%;
-    top: 50px;
-    margin-left: -150px;
+    top: 45px;
+    margin-left:-85px;
 }
 
 
@@ -76,7 +74,6 @@ html,body{
 
 .item__link{
     text-decoration: none;
-    font-family: overpass;
     font-size: 0.7em;
     font-weight: 900;
     color: #ffffffe2;
@@ -89,6 +86,52 @@ html,body{
     transition: 0.2s;
     position: sticky;
 }
+/* ---------------links-mobile-------------- */
+.item__link-resp{
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 900;
+    color: #ffffffe2;
+    margin-right:20px;
+    transition: 0.2s;
+}
+
+.item__link-resp:focus{
+    opacity: 70%;
+}
+
+
+.link_ver-inv{
+    color: #0f0f0f;
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 900;
+    margin-right:20px;
+    transition: 0.2s;
+}
+.link_ver-inv:hover{
+    opacity: 80%;
+    transition: 0.2s;
+    position: sticky;
+}
+
+.resp_inv-ver{
+    color: #0f0f0f;
+}
+.resp_inv-ver:focus{
+    opacity: 70%;
+}
+/* --------------------------------------------- */
+
+.menu_hamburguesa{
+    display: none
+}
+
+.list-icon{
+    display: none;
+}
+
+
 
 
 /* --------main------ */
@@ -108,6 +151,7 @@ html,body{
 
 .h1__inicio{
     font-size: 3em;
+    font-weight: bold;
     color: #eeecece8;
     margin-top: 80px;
     letter-spacing: 5px;
@@ -129,6 +173,7 @@ html,body{
     "item1 item1 item1 item1"
     "item1 item1 item1 item1";
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .grid__item1{
@@ -199,7 +244,7 @@ width: 100%;
     position: fixed;
     right: 20px;
     bottom: 20px;
-    transition: transform 0.7s;
+    transition: 0.7s;
 }
 
 .logo-wpp:hover{
@@ -210,9 +255,6 @@ width: 100%;
 
  /* ----------pagina invierno-verano------- */
 
-.nav-invierno,.nav-verano{
-    position:relative;
-}
 
 
 .body__invierno{
@@ -220,13 +262,18 @@ width: 100%;
     box-sizing: border-box;
 }
 
+.body__verano{
+    background-color: #d2a7a7;
+}
+
 .header__blanco{
     background-color: #ffffffe2;
     width: 100%;
 }
 
-.item__link-negro{
+.link_ver-inv{
     color: #0f0f0f;
+
 }
 
 .item__link-invierno:hover{
@@ -277,24 +324,28 @@ width: 100%;
     
 }
 
-.section__carrousel{
-    justify-content: center;
+.section{
+    display: flex;
 }
 
-.carousel{
-    margin: 0 300px 0 300px;
-    width: 60%;
-}
-
-.carousel-item{
-    height: 500px;
+.carrousel__completo{
+    width: 100%;
+    display: inline-block;
 }
 
 .d-block{
-    width: 50px;
     height: 500px;
-    background-repeat: no-repeat;
 }
+
+.slide{
+    margin-top: 10px;
+}
+
+.slide img{
+    width: 65vh;
+}
+
+
 /* -----------------------------------------contacto-------------------------- */
 
 
@@ -421,3 +472,159 @@ textarea{
 }
 
 /* ----------------------media------------- */
+
+@media screen and (max-width: 768px){
+    .nav{
+        display: none;
+    }
+    .header__logo{
+        position: fixed;
+        top: 0;
+        left: 10px;
+        width: 50px;
+    }
+
+    .h1__inicio{
+        font-size: 2.2em;
+    }
+
+    .nav__ul-item{
+        width: 100%;
+        position: absolute;
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item__link{
+        color: rgb(255, 255, 255);
+        display: flex;
+        letter-spacing: 0.3em;
+    
+        
+    }
+
+    .list-icon{
+        color:#eeecece8;
+        margin-right: 10px;
+        margin-top: 10px;
+        display: flex;
+    }
+    .label__hamburguesa{
+        display: flex;
+        position:absolute;
+
+    }
+    .menu_hamburguesa{
+        position: absolute;  
+    }
+
+    .container_nav{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 40px;
+        justify-content: end;
+        
+    }
+
+    .nav_hamburguesa{
+        height: 50vh;
+        width: 100vw;
+        display: block;
+        background-color: #0f0f0f;
+        align-content: center;
+        margin-top: 30px;
+
+}
+    .menu_hamburguesa{
+    display: none;
+}
+/* ------------------------- main---------- */
+.main__div{
+    height: 270px;
+}
+.grid__container{
+    margin: 0;
+    gap: 0;
+    grid-template-areas:
+    "item3 item3 item3  item3"
+    "item2 item2 item2 item2"
+    "item1 item1 item1 item1";
+    grid-template-rows: repeat(3,300px);
+    gap: 30px;
+    margin-bottom: 30px;
+
+}
+/* ------------verano-invierno---- */
+.nav_hamburguesa-v{
+    background-color: #f8f3f3;
+}
+.nav_hamburguesa-i{
+    background-color: #e3e4e5;
+}
+
+.nav-invierno{
+    display: none;
+}
+.nav-verano{
+    display: none;
+}
+
+.item__link-negro{
+    color: red;
+}
+/* ---------------footer-------- */
+.copyright{
+    font-size: 0.7em;
+}
+
+/* ---------nosotros---------- */
+.parrafo__nosotros{
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+
+}
+
+.menu_hamburguesa:not(:checked) ~ .nav_hamburguesa{
+        display: none;
+
+
+}
+
+.nav__item{
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    height:50px;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+
+/* ------------------------- main---------- */
+    /* .main__div{
+        height: 270px;
+    }
+    .grid__container{
+        margin: 0;
+        gap: 0;
+        grid-template-areas:
+        "item3 item3 item3  item3"
+        "item2 item2 item2 item2"
+        "item1 item1 item1 item1";
+        grid-template-rows: repeat(3,300px);
+        gap: 30px;
+        margin-bottom: 30px;
+    } */
+    /* ---------------footer-------- */
+    .copyright{
+        font-size: 0.7em;
+    }
+
