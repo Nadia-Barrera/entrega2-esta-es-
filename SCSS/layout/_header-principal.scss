@@ -1,0 +1,62 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+header{
+    @include width-height (100%,250px);
+    background-color: $color-negro;
+    ;
+    .container_nav{
+        display: flex;
+        position: relative;
+        @include width-height (100%,40px);
+        justify-content: end;
+        .label__hamburguesa{
+            display: flex;
+            position:absolute;
+            // .list-icon{
+            //     color: $color-blanco;
+            //     margin-top: 10px;
+            //     margin-right:20px;
+            //     display: flex;
+            // }
+        }
+        .menu_hamburguesa{
+            position: absolute;
+            display: none;
+        }
+        .menu_hamburguesa:not(:checked) ~ .nav_hamburguesa{
+            display: none;
+        }
+        .nav_hamburguesa{
+            @include width-height (100%,70vh);
+            display: block;
+            background-color: $color-negro2;
+            align-content: center;
+            margin-top: 30px;
+            .nav__item{
+                margin-top: 30px;
+                display: flex;
+                @include width-height (100%,50px);
+                justify-content: center;
+                align-content: center;
+                .item__link-resp{
+                    text-decoration: none;
+                    font-size: 0.7em;
+                    font-weight: 900;
+                    color: $color-blanco2;
+                    transition: 0.2s;
+                    &:focus{
+                        opacity: 70%;
+                    }
+                }
+            }
+        }
+    }
+    .header__logo{
+        position: fixed;
+        filter: drop-shadow(0px 1px 1px #fff);
+        top: 0;
+        left: 10px;
+        @include width-height (50px,50px);
+    }
+}

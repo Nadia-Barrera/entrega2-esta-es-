@@ -1,0 +1,78 @@
+@media (max-width: 551px){
+.list-icon{
+    color: $color-blanco;
+    margin-top: 10px;
+    margin-right:20px;
+    display: flex;
+}
+.header__container{
+    display: none;
+}
+.h1__inicio{
+    font-size: 2.2em;
+    font-family: $font;
+    font-weight: bold;
+    color: $color-blanco;
+    letter-spacing: 5px;
+}
+
+.input{
+    @include input-textarea;
+}
+.textarea{
+    margin-top: 10px;
+    @include input-textarea;
+    @include width-height (90%, 90px)
+
+}
+
+p{          
+    font-size: 0.6em;
+    color: $color-negro;
+    align-items: center;
+    margin: 0 10px 20px 10px;
+    font-weight: 500;
+}
+
+a{
+        font-family: $font;
+        font-weight: 100;
+        color: $color-negro;
+        margin: 10px 0 10px 0;
+        padding: 10px;
+        font-size: 0.6em;
+        text-decoration: none;
+}
+
+.section__titulo{
+    color: $color-negro;
+    font-family: $font;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.boton{
+    @include width-height (30px,30px);
+    position: absolute;
+    right: 10px;
+    padding: 0 0 10px 0;
+    border: none;
+    background-color: $color-blanco2;
+    background-image: url(../../assets/contacto/file\ \(1\).png);
+    background-size:40px 40px ;
+    background-position: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.boton:hover{
+        transform: rotate(40deg);
+        transition: 0.5s;
+        background-color: $color-blanco;
+        box-shadow: 1px 0 3px 1px #0f0f0f5d;
+}
+
+}

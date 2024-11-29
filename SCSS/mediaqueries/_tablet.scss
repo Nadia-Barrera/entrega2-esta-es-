@@ -1,0 +1,151 @@
+@media (min-width: 552px) and (max-width: 1023px){
+
+.container_nav{
+    display: none;
+    }
+.list-icon{
+    display: none;
+    }
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    } 
+.nav{
+    position: absolute;
+    justify-content: end;
+    width: 100%;
+    top: 45px;
+    right: 10px;
+    } 
+.nav__ul-item{
+    list-style-type: none;
+    padding: 5px;
+    display: inline-block;
+    } 
+.item__link{
+    text-decoration: none;
+    font-size: 0.7em;
+    font-weight: 900;
+    color: #ffffffe2;
+    margin-right: 15px;
+    transition: 0.2s;
+    } 
+.item__link:hover{
+    opacity: 80%;
+    transition: 0.2s;
+    position: sticky;
+    } 
+
+// GRID PARA TABLET
+
+.grid__container{
+    display: grid;
+    margin: 10px 60px 0px 60px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,200px);
+    grid-template-areas:
+    "item3 item3 item2 item2"
+    "item3 item3 item2 item2"
+    "item1 item1 item1 item1"
+    "item1 item1 item1 item1";
+    gap: 30px;
+    margin-bottom: 50px;
+    } 
+    
+.grid__item1{
+    grid-area: item1;
+    background-image:url(../assets/invierno/abrigodelana.jpg);
+    background-size: cover;
+    } 
+    
+.grid__item2{
+    grid-area: item2;
+    background-image: url(../assets/invierno/poleranegra.jpg);
+    background-size: cover;
+    width: 100%;
+    } 
+    
+.grid__item3{
+    grid-area: item3;
+    background-image: url(../assets/invierno/sweater-marron.jpg);
+    background-size: cover;
+    width: 100%;
+    
+    }
+.h2__inicio{
+    margin-top: 10px;
+    align-content: center;
+}    
+
+.h1__inicio{
+    font-size: 3em;
+    font-family: $font;
+    font-weight: bold;
+    color: $color-blanco;
+    letter-spacing: 5px;
+}
+
+.contacto__input{
+    width: 100%;
+}
+
+.input{
+    @include input-textarea-tablet;
+}
+.textarea{
+    margin-top: 10px;
+    @include input-textarea-tablet;
+    @include width-height (50%, 90px)
+}
+
+a{
+    font-family: $font;
+    font-weight: 100;
+    color: $color-negro;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    font-size: 0.7em;
+    text-decoration: none;
+}
+
+p{          
+    font-size: 0.7em;
+    color: $color-negro;
+    align-items: center;
+    margin: 0 10px 20px 10px;
+    font-weight: 500;
+}
+
+.section__titulo{
+    color: $color-negro;
+    font-family: $font;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.boton{
+    @include width-height (30px,30px);
+    position: absolute;
+    left: 75%;
+    top: -35px;
+    border: none;
+    background-color: $color-blanco2;
+    background-image: url(../../assets/contacto/file\ \(1\).png);
+    background-size:40px 40px ;
+    background-position: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.boton:hover{
+        transform: rotate(40deg);
+        transition: 0.5s;
+        background-color: $color-blanco;
+        box-shadow: 1px 0 3px 1px #0f0f0f5d;
+}
+}

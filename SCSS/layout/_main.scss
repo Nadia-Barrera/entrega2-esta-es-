@@ -1,0 +1,30 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+main{
+    margin-bottom: 0px;
+    .main__div{
+        @include width-height (100%,270px);
+        display: flex;
+        justify-content: center;
+        background-color: $color-negro;
+        // .h1__inicio{
+        //     font-size: 2.2em;
+        //     font-family: $font;
+        //     font-weight: bold;
+        //     color: $color-blanco;
+        //     letter-spacing: 5px;
+        // }
+    }
+    .main__div-h2{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        .h2__inicio{
+            font-weight: bold;
+            font-size: 1.5em;
+            color: $color-negro;
+            justify-items: center;
+    }
+    }
+}

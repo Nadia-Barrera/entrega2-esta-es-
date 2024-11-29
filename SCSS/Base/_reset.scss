@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:"overpass";
+    src: url(../fonts/static/Overpass-Black.ttf) format("truetype");
+    font-weight: 900;
+}
+@font-face {
+    font-family:"overpass";
+    src:url(../fonts/static/Overpass-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family:"overpass";
+    src: url(../fonts/static/Overpass-Light.ttf) format("truetype");
+    font-weight: 100;
+}
+
+    /* inicio */
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: overpass;
+}

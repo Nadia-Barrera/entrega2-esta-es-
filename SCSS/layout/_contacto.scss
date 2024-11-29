@@ -1,0 +1,65 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+.main{
+    min-height: 100%;
+    .section__contacto{
+        height: 700px;
+            font-family: $font;
+            font-weight: 500;
+            color: $color-blanco2;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 1.6em;    
+        }
+        .container__contacto{ 
+            width: 100%;
+            flex-direction: column;
+            position: absolute;
+            display: flex;
+            border-radius: 20px;
+            justify-content: center;
+            .cantainer__parrafo{
+                @include width-height (100%,95%);
+                position: relative;
+                border: 1px solid $color-negro;
+            }
+            ul{
+                padding: 0;
+                li{
+                    .bi-whatsapp,.bi-telephone,.bi-envelope,.bi-geo-alt{
+                        color: $color-negro;
+                    }
+                        a{
+                            color: $color-negro;
+                            text-decoration: none;
+                        }
+                }
+            }
+                .contacto__input{
+                width: 100%;
+                align-items: center;
+                margin-top: 20px;
+                justify-content: center;
+                // .input{
+                //     width: 90%;
+                //     @include input-textarea;
+                // }
+            }
+        .contacto__message{
+            @include width-height (100%,100px);
+            justify-content: center;
+            position: relative;
+            // textarea{
+            //     @include width-height (90%,90px);
+            //     @include input-textarea;
+            //     margin-top: 10px;
+            // }
+        }
+        }
+        .div__boton{
+            position: relative;
+            height: 100%;
+            }
+        
+    }

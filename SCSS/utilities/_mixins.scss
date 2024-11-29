@@ -1,0 +1,45 @@
+@mixin width-height ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin input-textarea{
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.338);
+    font-family: $font;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    background-color: #0000;
+    padding: 0;
+    font-size: 0.6em;
+}
+
+@mixin input-textarea-tablet{
+    margin-bottom: 20px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.338);
+    font-family: $font;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    background-color: #0000;
+    padding: 0;
+    font-size: 0.7em;
+}
+
+@mixin input-textarea-desktop{
+    margin-bottom: 20px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom:1px solid rgba(0, 0, 0, 0.338);
+    font-family: $font;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    background-color: #0000;
+    padding: 0;
+    font-size: 0.7em;
+}

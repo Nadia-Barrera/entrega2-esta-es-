@@ -1,0 +1,52 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+footer{
+    padding: 0;
+    margin: 0;
+    .footer{
+        @include width-height (100%,70px);
+        position: relative;
+        margin: 0;
+        padding: 0;
+        bottom:0;
+        background-color: $color-negro;
+        text-align: center;
+        color: $color-blanco2;
+            .div__ig{
+            display: inline-block;
+            margin-top: 20px;
+            }
+            .ig__link{
+            text-decoration: none;
+            font-family: $font;
+            font-weight: 600;
+            text-align: center;
+            color: $color-blanco2;
+            margin-top: 15px;
+            } 
+        }
+    .footer__link{
+        position: absolute;
+        text-align: center;
+        .logo-wpp{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            transition: 0.7s;
+            
+        &:hover{
+            transform: rotate(360deg) scale(105%);
+            transition: 1.5s;
+            }
+        }
+    }
+    .copyright{
+        background-color: $color-negro;
+        color: $color-blanco2;
+        font-size: 0.7em;
+        text-align: center;
+        margin: 0;
+    }
+
+}

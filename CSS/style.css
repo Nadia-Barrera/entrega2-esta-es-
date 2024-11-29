@@ -1,630 +1,673 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family:"overpass";
-    src: url(../fonts/static/Overpass-Black.ttf) format("truetype");
-    font-weight: 900;
+  font-family: "overpass";
+  src: url(../fonts/static/Overpass-Black.ttf) format("truetype");
+  font-weight: 900;
 }
 @font-face {
-    font-family:"overpass";
-    src:url(../fonts/static/Overpass-Medium.ttf) format("truetype");
-    font-weight: 500;
+  font-family: "overpass";
+  src: url(../fonts/static/Overpass-Medium.ttf) format("truetype");
+  font-weight: 500;
 }
-
 @font-face {
-    font-family:"overpass";
-    src: url(../fonts/static/Overpass-Light.ttf) format("truetype");
-    font-weight: 100;
+  font-family: "overpass";
+  src: url(../fonts/static/Overpass-Light.ttf) format("truetype");
+  font-weight: 100;
+}
+/* inicio */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: overpass;
 }
 
-    /* inicio */
-html,body{
-    margin: 0;
-    padding: 0;
-    font-family: overpass;
+footer {
+  padding: 0;
+  margin: 0;
+}
+footer .footer {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  background-color: #151515;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8862745098);
+}
+footer .footer .div__ig {
+  display: inline-block;
+  margin-top: 20px;
+}
+footer .footer .ig__link {
+  text-decoration: none;
+  font-family: overpass;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8862745098);
+  margin-top: 15px;
+}
+footer .footer__link {
+  position: absolute;
+  text-align: center;
+}
+footer .footer__link .logo-wpp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: 0.7s;
+}
+footer .footer__link .logo-wpp:hover {
+  transform: rotate(360deg) scale(105%);
+  transition: 1.5s;
+}
+footer .copyright {
+  background-color: #151515;
+  color: rgba(255, 255, 255, 0.8862745098);
+  font-size: 0.7em;
+  text-align: center;
+  margin: 0;
 }
 
-.body__menu{
-    background-color: #ffffffe2;
-    box-sizing: border-box;
-    min-height: 100vh;
-    position: relative;
+header {
+  width: 100%;
+  height: 250px;
+  background-color: #151515;
+}
+header .container_nav {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  justify-content: end;
+}
+header .container_nav .label__hamburguesa {
+  display: flex;
+  position: absolute;
+}
+header .container_nav .menu_hamburguesa {
+  position: absolute;
+  display: none;
+}
+header .container_nav .menu_hamburguesa:not(:checked) ~ .nav_hamburguesa {
+  display: none;
+}
+header .container_nav .nav_hamburguesa {
+  width: 100%;
+  height: 70vh;
+  display: block;
+  background-color: rgba(15, 15, 15, 0.9137254902);
+  align-content: center;
+  margin-top: 30px;
+}
+header .container_nav .nav_hamburguesa .nav__item {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-content: center;
+}
+header .container_nav .nav_hamburguesa .nav__item .item__link-resp {
+  text-decoration: none;
+  font-size: 0.7em;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.8862745098);
+  transition: 0.2s;
+}
+header .container_nav .nav_hamburguesa .nav__item .item__link-resp:focus {
+  opacity: 70%;
+}
+header .header__logo {
+  position: fixed;
+  filter: drop-shadow(0px 1px 1px #fff);
+  top: 0;
+  left: 10px;
+  width: 50px;
+  height: 50px;
 }
 
-/*----- Header----- */
-
-.header{
-    background-color: #0f0f0f;
-    height: 100px;
+main {
+  margin-bottom: 0px;
+}
+main .main__div {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  background-color: #151515;
+}
+main .main__div-h2 {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+main .main__div-h2 .h2__inicio {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #151515;
+  justify-items: center;
 }
 
-.header__logo{
-    filter: drop-shadow(0px 1px 1px #fff);
-    width: 65px;
+.grid__container {
+  display: grid;
+  margin: 40px 100px 0px 100px;
+  margin: 0;
+  gap: 0;
+  grid-template-areas: "item3 item3 item3  item3" "item2 item2 item2 item2" "item1 item1 item1 item1";
+  grid-template-rows: repeat(3, 300px);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.grid__container .grid__item1 {
+  grid-area: item1;
+  background-image: url(../../assets/invierno/abrigodelana.jpg);
+  background-size: cover;
+}
+.grid__container .grid__item2 {
+  grid-area: item2;
+  background-image: url(../../assets/invierno/poleranegra.jpg);
+  background-size: cover;
+  width: 100%;
+}
+.grid__container .grid__item3 {
+  grid-area: item3;
+  background-image: url(../../assets/invierno/sweater-marron.jpg);
+  background-size: cover;
+  width: 100%;
 }
 
-/* --------nav------ */
+.main__nosotros {
+  background-image: url(../../assets/contacto/fondobody.jpg);
+  background-size: cover;
+}
+.main__nosotros .div__nosotros {
+  font-family: overpass;
+  font-weight: 100;
+  font-size: 1em;
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+}
+.main__nosotros .div__nosotros .h2-nosotros {
+  margin: 10px 0 10px 0;
+  font-weight: 500;
+  font-family: overpass;
+}
+.main__nosotros .div__nosotros .parrafo__nosotros {
+  text-align: center;
+  font-size: 1.2em;
+}
 
-.header__container{
+.main {
+  min-height: 100%;
+}
+.main .section__contacto {
+  height: 700px;
+  font-family: overpass;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8862745098);
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.6em;
+}
+.main .container__contacto {
+  width: 100%;
+  flex-direction: column;
+  position: absolute;
+  display: flex;
+  border-radius: 20px;
+  justify-content: center;
+}
+.main .container__contacto .cantainer__parrafo {
+  width: 100%;
+  height: 95%;
+  position: relative;
+  border: 1px solid #151515;
+}
+.main .container__contacto ul {
+  padding: 0;
+}
+.main .container__contacto ul li .bi-whatsapp, .main .container__contacto ul li .bi-telephone, .main .container__contacto ul li .bi-envelope, .main .container__contacto ul li .bi-geo-alt {
+  color: #151515;
+}
+.main .container__contacto ul li a {
+  color: #151515;
+  text-decoration: none;
+}
+.main .container__contacto .contacto__input {
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+  justify-content: center;
+}
+.main .container__contacto .contacto__message {
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  position: relative;
+}
+.main .div__boton {
+  position: relative;
+  height: 100%;
+}
+
+.nav__item {
+  padding: 0;
+}
+
+.section__carrousel {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 552px) and (max-width: 1023px) {
+  .container_nav {
+    display: none;
+  }
+  .list-icon {
+    display: none;
+  }
+  .header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px;
     width: 100%;
-}
-
-.nav{
+  }
+  .nav {
     position: absolute;
-    justify-items:right;
+    justify-content: end;
     width: 100%;
     top: 45px;
-    margin-left:-85px;
-}
-
-
-.nav__ul-item{
+    right: 10px;
+  }
+  .nav__ul-item {
     list-style-type: none;
-    padding: 15px;
+    padding: 5px;
     display: inline-block;
-}
-
-.item__link{
+  }
+  .item__link {
     text-decoration: none;
     font-size: 0.7em;
     font-weight: 900;
-    color: #ffffffe2;
-    margin-right:20px;
+    color: rgba(255, 255, 255, 0.8862745098);
+    margin-right: 15px;
     transition: 0.2s;
-}
-
-.item__link:hover{
+  }
+  .item__link:hover {
     opacity: 80%;
     transition: 0.2s;
     position: sticky;
-}
-/* ---------------links-mobile-------------- */
-.item__link-resp{
-    text-decoration: none;
-    font-size: 0.7em;
-    font-weight: 900;
-    color: #ffffffe2;
-    margin-right:20px;
-    transition: 0.2s;
-}
-
-.item__link-resp:focus{
-    opacity: 70%;
-}
-
-
-.link_ver-inv{
-    color: #0f0f0f;
-    text-decoration: none;
-    font-size: 0.7em;
-    font-weight: 900;
-    margin-right:20px;
-    transition: 0.2s;
-}
-.link_ver-inv:hover{
-    opacity: 80%;
-    transition: 0.2s;
-    position: sticky;
-}
-
-.resp_inv-ver{
-    color: #0f0f0f;
-}
-.resp_inv-ver:focus{
-    opacity: 70%;
-}
-/* --------------------------------------------- */
-
-.menu_hamburguesa{
-    display: none
-}
-
-.list-icon{
-    display: none;
-}
-
-
-
-
-/* --------main------ */
-
-.main{
-    margin-bottom: 0px;
-}
-
-.main__div{
-    display: flex;
-    justify-content: center;
-    height: 400px;
-    width: 100%;
-    background-color: #0f0f0f;
-}
-
-
-.h1__inicio{
-    font-size: 3em;
-    font-weight: bold;
-    color: #eeecece8;
-    margin-top: 80px;
-    letter-spacing: 5px;
-}
-
-.section__div{
-    display: flex;
-    border: 1px solid red;
-}
-
-.grid__container{
+  }
+  .grid__container {
     display: grid;
-    margin: 40px 100px 0px 100px;
+    margin: 10px 60px 0px 60px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4,200px);
-    grid-template-areas:
-    "item3 item3 item2 item2"
-    "item3 item3 item2 item2"
-    "item1 item1 item1 item1"
-    "item1 item1 item1 item1";
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: "item3 item3 item2 item2" "item3 item3 item2 item2" "item1 item1 item1 item1" "item1 item1 item1 item1";
     gap: 30px;
     margin-bottom: 50px;
-}
-
-.grid__item1{
-grid-area: item1;
-background-image:url(../assets/invierno/abrigodelana.jpg);
-background-size: cover;
-}
-
-.grid__item2{
-grid-area: item2;
-background-image: url(../assets/invierno/poleranegra.jpg);
-background-size: cover;
-width: 100%;
-}
-
-.grid__item3{
-grid-area: item3;
-background-image: url(../assets/invierno/sweater-marron.jpg);
-background-size: cover;
-width: 100%;
-
-}
-
-
-      /*----------- fooooter---------- */
-
-.footer{
-    position: relative;
-    margin: 0;
-    padding: 0;
-    bottom:0;
-    width: 100%;
-    height:70px;
-    background-color: #0f0f0f;
-    text-align: center;
-    color: #ffffffe2;
-}
-
-.div__ig{
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.ig__link{
-    text-decoration: none;
-    font-family: overpass;
-    font-weight: 600;
-    text-align: center;
-    color: #ffffffe2;
-    margin-top: 15px;
-}
-
-.footer__link{
-    position: absolute;
-    text-align: center;
-
-}
-
-.copyright{
-    background-color: #0f0f0f;
-    color: #ffffffe2;
-    font-size: 1em;
-    text-align: center;
-    margin: 0;
-}
-
-.logo-wpp{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    transition: 0.7s;
-}
-
-.logo-wpp:hover{
-    transform: rotate(360deg) scale(105%);
-    transition: 1.5s;
-
-}
-
- /* ----------pagina invierno-verano------- */
-
-
-
-.body__invierno{
-    background-color: #0f0f0f;
-    box-sizing: border-box;
-}
-
-.body__verano{
-    background-color: #d2a7a7;
-}
-
-.header__blanco{
-    background-color: #ffffffe2;
-    width: 100%;
-}
-
-.link_ver-inv{
-    color: #0f0f0f;
-
-}
-
-.item__link-invierno:hover{
-    color: #504e4e
-}
-
-.main__div-invierno{
-    background-color: #ffffffe2;
-}
-
-.h1__invierno{
-    color: #0f0f0f;
-}
-
-
-.footer__invierno{
-    background-color: #ffffffe2;
-}
-
-.copyright__invierno{
-    background-color: #ffffffe2;
-    color: #0f0f0f;
-}
-.ig__link-invierno{
-    color: #0f0f0f
-}
-
-
-/* ----main----- */
-
-.h2__inicio{
-    margin: 40px;
-    font-family: overpass;
-    font-weight: 100;
-    text-align: center;
-    font-size: 2em;
-    color: #0f0f0f;
-
-}
-
-.section__h2{
-    text-align: center;
-    margin: 30px 0 30px 0;
-    color: #ffffffe2;
-    font-family: overpass;
-    font-weight: 100;
-    font-size: 2em;
-    
-}
-
-.section{
-    display: flex;
-}
-
-.carrousel__completo{
-    width: 100%;
-    display: inline-block;
-}
-
-.d-block{
-    height: 500px;
-}
-
-.slide{
-    margin-top: 10px;
-}
-
-.slide img{
-    width: 65vh;
-}
-
-
-/* -----------------------------------------contacto-------------------------- */
-
-
-
-.body__contact{
-    background-image: url(../assets/contacto/fondobody.jpg);
+  }
+  .grid__item1 {
+    grid-area: item1;
+    background-image: url(../assets/invierno/abrigodelana.jpg);
     background-size: cover;
-}
-
-.section__contacto{
-    margin: 0 150px 0 150px;
-}
-
-
-.section__titulo{
+  }
+  .grid__item2 {
+    grid-area: item2;
+    background-image: url(../assets/invierno/poleranegra.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  .grid__item3 {
+    grid-area: item3;
+    background-image: url(../assets/invierno/sweater-marron.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  .h2__inicio {
+    margin-top: 10px;
+    align-content: center;
+  }
+  .h1__inicio {
+    font-size: 3em;
     font-family: overpass;
-    text-align: center;
-    margin: 30px 0 30px 0;
-    font-weight: 100vh;
-    font-size: 2em;
-}
-
-.container__contacto{
-    display: flex;
-    background-color: #ffffffe2;
-    border-radius: 20px;
-    padding: 40px;
-    justify-content: center;
-}
-
-.contacto__input{
-    width: 450px;
-    padding: 20px;
-    align-items: center;
-}
-
-.contacto__input>input{
-    padding: 10px;
-    margin: 20px;
-    width: 300px;
+    font-weight: bold;
+    color: rgba(238, 236, 236, 0.9098039216);
+    letter-spacing: 5px;
+  }
+  .contacto__input {
+    width: 100%;
+  }
+  .input {
+    margin-bottom: 20px;
+    width: 50%;
     border: none;
     outline: none;
-    border-bottom:1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.338);
     font-family: overpass;
     font-weight: 100;
     letter-spacing: 0.1em;
-    background-color: #0000;
-}
-
-.contacto__message{
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-textarea{
-    min-width: 300px;
-    max-width: 300px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    font-size: 0.7em;
+  }
+  .textarea {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    border: none;
     outline: none;
-    height: 100%;
-    border: none;
-    border-bottom:1px solid black;
-    margin-top: 38px;
-    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.338);
     font-family: overpass;
-    font-weight: 100; 
+    font-weight: 100;
     letter-spacing: 0.1em;
-    background-color: #0000;
-
-}
-
-.div__boton{
-    position: relative;
-}
-
-.boton{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border: none;
-    background-color: #ffffffe2;
-    background-image: url(../assets/contacto/file\ \(1\).png);
-    background-size:40px 40px ;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    font-size: 0.7em;
+    width: 50%;
+    height: 90px;
+  }
+  a {
+    font-family: overpass;
+    font-weight: 100;
+    color: #151515;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    font-size: 0.7em;
+    text-decoration: none;
+  }
+  p {
+    font-size: 0.7em;
+    color: #151515;
+    align-items: center;
+    margin: 0 10px 20px 10px;
+    font-weight: 500;
+  }
+  .section__titulo {
+    color: #151515;
+    font-family: overpass;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  .boton {
     width: 30px;
     height: 30px;
+    position: absolute;
+    left: 75%;
+    top: -35px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8862745098);
+    background-image: url(../../assets/contacto/file\ \(1\).png);
+    background-size: 40px 40px;
+    background-position: center;
     border-radius: 100%;
     cursor: pointer;
     transition: 0.6s;
-}
-
-.boton:hover{
+  }
+  .boton:hover {
     transform: rotate(40deg);
     transition: 0.5s;
-    background-color: #eeecece8;
+    background-color: rgba(238, 236, 236, 0.9098039216);
+    box-shadow: 1px 0 3px 1px rgba(15, 15, 15, 0.3647058824);
+  }
 }
-
-
-
-
-/* -------------------------------nosotros------------- */
-
-.main__nosotros{
-    background-image: url(../assets/contacto/fondobody.jpg);
-    background-size: cover;
-}
-
-.div__nosotros{
+@media (max-width: 551px) {
+  .list-icon {
+    color: rgba(238, 236, 236, 0.9098039216);
+    margin-top: 10px;
+    margin-right: 20px;
+    display: flex;
+  }
+  .header__container {
+    display: none;
+  }
+  .h1__inicio {
+    font-size: 2.2em;
+    font-family: overpass;
+    font-weight: bold;
+    color: rgba(238, 236, 236, 0.9098039216);
+    letter-spacing: 5px;
+  }
+  .input {
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.338);
     font-family: overpass;
     font-weight: 100;
-    font-size: 1em;
-    text-align: center;
-    margin: 0px;
-    padding: 20px;
-}
-
-.parrafo__nosotros{
-    text-align: center;
-    margin: 40px 0 40px 0;
-    padding: 30px;
-    font-size: 1.5em;
-}
-
-/* ----------------------media------------- */
-
-@media screen and (max-width: 768px){
-    .nav{
-        display: none;
-    }
-    .header__logo{
-        position: fixed;
-        top: 0;
-        left: 10px;
-        width: 50px;
-    }
-
-    .h1__inicio{
-        font-size: 2.2em;
-    }
-
-    .nav__ul-item{
-        width: 100%;
-        position: absolute;
-        height: 270px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .item__link{
-        color: rgb(255, 255, 255);
-        display: flex;
-        letter-spacing: 0.3em;
-    
-        
-    }
-
-    .list-icon{
-        color:#eeecece8;
-        margin-right: 10px;
-        margin-top: 10px;
-        display: flex;
-    }
-    .label__hamburguesa{
-        display: flex;
-        position:absolute;
-
-    }
-    .menu_hamburguesa{
-        position: absolute;  
-    }
-
-    .container_nav{
-        display: flex;
-        position: relative;
-        width: 100%;
-        height: 40px;
-        justify-content: end;
-        
-    }
-
-    .nav_hamburguesa{
-        height: 50vh;
-        width: 100vw;
-        display: block;
-        background-color: #0f0f0f;
-        align-content: center;
-        margin-top: 30px;
-
-}
-    .menu_hamburguesa{
-    display: none;
-}
-/* ------------------------- main---------- */
-.main__div{
-    height: 270px;
-}
-.grid__container{
-    margin: 0;
-    gap: 0;
-    grid-template-areas:
-    "item3 item3 item3  item3"
-    "item2 item2 item2 item2"
-    "item1 item1 item1 item1";
-    grid-template-rows: repeat(3,300px);
-    gap: 30px;
-    margin-bottom: 30px;
-
-}
-/* ------------verano-invierno---- */
-.nav_hamburguesa-v{
-    background-color: #f8f3f3;
-}
-.nav_hamburguesa-i{
-    background-color: #e3e4e5;
-}
-
-.nav-invierno{
-    display: none;
-}
-.nav-verano{
-    display: none;
-}
-
-.item__link-negro{
-    color: red;
-}
-/* ---------------footer-------- */
-.copyright{
-    font-size: 0.7em;
-}
-
-/* ---------nosotros---------- */
-.parrafo__nosotros{
-    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    background-color: rgba(0, 0, 0, 0);
     padding: 0;
-    margin: 0;
+    font-size: 0.6em;
+  }
+  .textarea {
+    margin-top: 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.338);
+    font-family: overpass;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    font-size: 0.6em;
+    width: 90%;
+    height: 90px;
+  }
+  p {
+    font-size: 0.6em;
+    color: #151515;
+    align-items: center;
+    margin: 0 10px 20px 10px;
+    font-weight: 500;
+  }
+  a {
+    font-family: overpass;
+    font-weight: 100;
+    color: #151515;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    font-size: 0.6em;
+    text-decoration: none;
+  }
+  .section__titulo {
+    color: #151515;
+    font-family: overpass;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  .boton {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    padding: 0 0 10px 0;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8862745098);
+    background-image: url(../../assets/contacto/file\ \(1\).png);
+    background-size: 40px 40px;
+    background-position: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  .boton:hover {
+    transform: rotate(40deg);
+    transition: 0.5s;
+    background-color: rgba(238, 236, 236, 0.9098039216);
+    box-shadow: 1px 0 3px 1px rgba(15, 15, 15, 0.3647058824);
+  }
 }
-
-}
-
-.menu_hamburguesa:not(:checked) ~ .nav_hamburguesa{
-        display: none;
-
-
-}
-
-.nav__item{
-    color: rgb(255, 255, 255);
+@media (min-width: 1024px) {
+  .container_nav {
+    display: none;
+  }
+  .list-icon {
+    display: none;
+  }
+  .header__container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height:50px;
-    justify-content: center;
+  }
+  .nav {
+    position: absolute;
+    justify-content: end;
+    width: 100%;
+    top: 45px;
+    right: 50px;
+  }
+  .nav__ul-item {
+    list-style-type: none;
+    padding: 5px;
+    display: inline-block;
+  }
+  .item__link {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.8862745098);
+    margin-right: 15px;
+    transition: 0.2s;
+  }
+  .item__link:hover {
+    opacity: 80%;
+    transition: 0.2s;
+    position: sticky;
+  }
+  .grid__container {
+    display: grid;
+    margin: 10px 60px 0px 60px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: "item3 item3 item2 item2" "item3 item3 item2 item2" "item1 item1 item1 item1" "item1 item1 item1 item1";
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+  .grid__item1 {
+    grid-area: item1;
+    background-image: url(../assets/invierno/abrigodelana.jpg);
+    background-size: cover;
+  }
+  .grid__item2 {
+    grid-area: item2;
+    background-image: url(../assets/invierno/poleranegra.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  .grid__item3 {
+    grid-area: item3;
+    background-image: url(../assets/invierno/sweater-marron.jpg);
+    background-size: cover;
+    width: 100%;
+  }
+  .h2__inicio {
+    margin-top: 10px;
     align-content: center;
-
-
+  }
+  .h1__inicio {
+    font-size: 4em;
+    font-family: overpass;
+    font-weight: bold;
+    color: rgba(238, 236, 236, 0.9098039216);
+    letter-spacing: 5px;
+  }
+  .contacto__input {
+    width: 100%;
+  }
+  .input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.338);
+    font-family: overpass;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    font-size: 0.7em;
+  }
+  .textarea {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 50%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.338);
+    font-family: overpass;
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    font-size: 0.7em;
+    width: 50%;
+    height: 90px;
+  }
+  .section__titulo {
+    font-size: 2em;
+  }
+  .p {
+    font-size: 1em;
+  }
+  .section__titulo {
+    color: #151515;
+    font-family: overpass;
+    text-align: center;
+    margin: 30px 0 30px 0;
+    font-size: 1.3em;
+    font-weight: 500;
+  }
+  a {
+    font-family: overpass;
+    font-weight: 100;
+    color: #151515;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    font-size: 0.8em;
+    text-decoration: none;
+  }
+  p {
+    font-size: 0.8em;
+    color: #151515;
+    align-items: center;
+    margin: 0 10px 20px 10px;
+    font-weight: 500;
+  }
+  .boton {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 75%;
+    top: -40px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8862745098);
+    background-image: url(../../assets/contacto/file\ \(1\).png);
+    background-size: 40px 40px;
+    background-position: center;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.6s;
+  }
+  .boton:hover {
+    transform: rotate(40deg);
+    transition: 0.5s;
+    background-color: rgba(238, 236, 236, 0.9098039216);
+    box-shadow: 1px 0 3px 1px rgba(15, 15, 15, 0.3647058824);
+  }
 }
 
-
-/* ------------------------- main---------- */
-    /* .main__div{
-        height: 270px;
-    }
-    .grid__container{
-        margin: 0;
-        gap: 0;
-        grid-template-areas:
-        "item3 item3 item3  item3"
-        "item2 item2 item2 item2"
-        "item1 item1 item1 item1";
-        grid-template-rows: repeat(3,300px);
-        gap: 30px;
-        margin-bottom: 30px;
-    } */
-    /* ---------------footer-------- */
-    .copyright{
-        font-size: 0.7em;
-    }
-
+/*# sourceMappingURL=style.css.map */
