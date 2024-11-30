@@ -55,24 +55,30 @@
     
 .grid__item1{
     grid-area: item1;
-    background-image:url(../../assets/invierno/abrigodelana.jpg);
+    // background-image:url(../../assets/invierno/abrigodelana.jpg);
     background-size: cover;
     } 
 
 .grid__item2{
     grid-area: item2;
-    background-image: url(../../assets/invierno/poleranegra.jpg);
+    // background-image: url(../../assets/invierno/poleranegra.jpg);
     background-size: cover;
     width: 100%;
     } 
     
 .grid__item3{
     grid-area: item3;
-    background-image: url(../../assets/invierno/sweater-marron.jpg);
+    // background-image: url(../../assets/invierno/sweater-marron.jpg);
     background-size: cover;
     width: 100%;
     
     }
+
+.img-grid{
+    height: 100%;
+    width: 100%;
+}
+
 .h2__inicio{
     margin-top: 10px;
     align-content: center;
