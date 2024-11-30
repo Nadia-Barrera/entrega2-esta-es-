@@ -316,18 +316,18 @@ main .main__div-h2 .h2__inicio {
   }
   .grid__item1 {
     grid-area: item1;
-    background-image: url(../assets/invierno/abrigodelana.jpg);
+    background-image: url(../../assets/invierno/abrigodelana.jpg);
     background-size: cover;
   }
   .grid__item2 {
     grid-area: item2;
-    background-image: url(../assets/invierno/poleranegra.jpg);
+    background-image: url(../../assets/invierno/poleranegra.jpg);
     background-size: cover;
     width: 100%;
   }
   .grid__item3 {
     grid-area: item3;
-    background-image: url(../assets/invierno/sweater-marron.jpg);
+    background-image: url(../../assets/invierno/sweater-marron.jpg);
     background-size: cover;
     width: 100%;
   }
@@ -406,7 +406,7 @@ main .main__div-h2 .h2__inicio {
     top: -35px;
     border: none;
     background-color: rgba(255, 255, 255, 0.8862745098);
-    background-image: url(../../assets/contacto/file\ \(1\).png);
+    background-image: url(../../assets/contacto/boton.png);
     background-size: 40px 40px;
     background-position: center;
     border-radius: 100%;
@@ -496,7 +496,7 @@ main .main__div-h2 .h2__inicio {
     padding: 0 0 10px 0;
     border: none;
     background-color: rgba(255, 255, 255, 0.8862745098);
-    background-image: url(../../assets/contacto/file\ \(1\).png);
+    background-image: url(../../assets/contacto/boton.png);
     background-size: 40px 40px;
     background-position: center;
     border-radius: 100%;
@@ -559,18 +559,18 @@ main .main__div-h2 .h2__inicio {
   }
   .grid__item1 {
     grid-area: item1;
-    background-image: url(../assets/invierno/abrigodelana.jpg);
+    background-image: url(../../assets/invierno/abrigodelana.jpg);
     background-size: cover;
   }
   .grid__item2 {
     grid-area: item2;
-    background-image: url(../assets/invierno/poleranegra.jpg);
+    background-image: url(../../assets/invierno/poleranegra.jpg);
     background-size: cover;
     width: 100%;
   }
   .grid__item3 {
     grid-area: item3;
-    background-image: url(../assets/invierno/sweater-marron.jpg);
+    background-image: url(../../assets/invierno/sweater-marron.jpg);
     background-size: cover;
     width: 100%;
   }
@@ -655,7 +655,7 @@ main .main__div-h2 .h2__inicio {
     top: -40px;
     border: none;
     background-color: rgba(255, 255, 255, 0.8862745098);
-    background-image: url(../../assets/contacto/file\ \(1\).png);
+    background-image: url(../../assets/contacto/boton.png);
     background-size: 40px 40px;
     background-position: center;
     border-radius: 100%;
