@@ -8,3 +8,59 @@
 .section__carrousel{
     margin-bottom: 30px;
 }
+
+.section_2{
+    width: 100%;
+    h2{
+        padding: 20px 0 20px 0;
+        font-family: $font;
+        font-weight: 500;
+        justify-self: center;
+    }
+}
+.container-items{
+    font-family: $font;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    .item-venta{
+        border-radius: 10px;
+    }
+    .item-venta img{
+        border-radius: 10px 10px 0 0 ;
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: all .3s;
+    }
+    .item-venta:hover{
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    }
+    .item-venta:hover img{
+        transform: scale(1.2);
+    }
+    .item-venta figure{
+        overflow: hidden;
+    }
+    .info-product{
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        h2{
+            margin: auto;
+            font-size: 1.2em;
+        }
+        p{
+            margin: auto;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        button{
+            color: $color-blanco;
+            background-color:$color-negro2;
+        }
+        .button{
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -28,7 +28,7 @@ header{
             display: none;
         }
         .nav_hamburguesa{
-            @include width-height (100%,70vh);
+            @include width-height (100%,490px);
             display: block;
             background-color: $color-negro2;
             align-content: center;
@@ -41,7 +41,7 @@ header{
                 align-content: center;
                 .item__link-resp{
                     text-decoration: none;
-                    font-size: 0.7em;
+                    font-size: 0.9em;
                     font-weight: 900;
                     color: $color-blanco2;
                     transition: 0.2s;

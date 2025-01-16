@@ -13,18 +13,19 @@
         .grid__item1{
             grid-area: item1;
             background-image:url(../../assets/invierno/abrigodelana.jpg);
-            background-size: cover;   
+            object-fit: cover;
+            width: 100%;
         }
         .grid__item2{
             grid-area: item2;
             background-image: url(../../assets/invierno/poleranegra.jpg);
-            background-size: cover;
             width: 100%;
+            object-fit: cover;
         }
         .grid__item3{
             grid-area: item3;
             background-image: url(../../assets/invierno/sweater-marron.jpg);
-            background-size: cover;
             width: 100%;
+            object-fit: cover;
         }
     }

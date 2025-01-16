@@ -53,6 +53,7 @@ footer .footer .ig__link {
   text-align: center;
   color: rgba(255, 255, 255, 0.8862745098);
   margin-top: 15px;
+  font-size: 1em;
 }
 footer .footer__link {
   position: absolute;
@@ -61,7 +62,7 @@ footer .footer__link {
 footer .footer__link .logo-wpp {
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 10px;
   transition: 0.7s;
 }
 footer .footer__link .logo-wpp:hover {
@@ -101,7 +102,7 @@ header .container_nav .menu_hamburguesa:not(:checked) ~ .nav_hamburguesa {
 }
 header .container_nav .nav_hamburguesa {
   width: 100%;
-  height: 70vh;
+  height: 490px;
   display: block;
   background-color: rgba(15, 15, 15, 0.9137254902);
   align-content: center;
@@ -117,7 +118,7 @@ header .container_nav .nav_hamburguesa .nav__item {
 }
 header .container_nav .nav_hamburguesa .nav__item .item__link-resp {
   text-decoration: none;
-  font-size: 0.7em;
+  font-size: 0.9em;
   font-weight: 900;
   color: rgba(255, 255, 255, 0.8862745098);
   transition: 0.2s;
@@ -150,7 +151,9 @@ main .main__div-h2 {
   width: 100%;
 }
 main .main__div-h2 .h2__inicio {
-  font-weight: bold;
+  margin-top: 10px;
+  font-weight: 500;
+  font-family: overpass;
   font-size: 1.5em;
   color: #151515;
   justify-items: center;
@@ -169,19 +172,20 @@ main .main__div-h2 .h2__inicio {
 .grid__container .grid__item1 {
   grid-area: item1;
   background-image: url(../../assets/invierno/abrigodelana.jpg);
-  background-size: cover;
+  object-fit: cover;
+  width: 100%;
 }
 .grid__container .grid__item2 {
   grid-area: item2;
   background-image: url(../../assets/invierno/poleranegra.jpg);
-  background-size: cover;
   width: 100%;
+  object-fit: cover;
 }
 .grid__container .grid__item3 {
   grid-area: item3;
   background-image: url(../../assets/invierno/sweater-marron.jpg);
-  background-size: cover;
   width: 100%;
+  object-fit: cover;
 }
 
 .main__nosotros {
@@ -267,6 +271,63 @@ main .main__div-h2 .h2__inicio {
   margin-bottom: 30px;
 }
 
+.section_2 {
+  width: 100%;
+}
+.section_2 h2 {
+  padding: 20px 0 20px 0;
+  font-family: overpass;
+  font-weight: 500;
+  justify-self: center;
+}
+
+.container-items {
+  font-family: overpass;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+.container-items .item-venta {
+  border-radius: 10px;
+}
+.container-items .item-venta img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+.container-items .item-venta:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.container-items .item-venta:hover img {
+  transform: scale(1.2);
+}
+.container-items .item-venta figure {
+  overflow: hidden;
+}
+.container-items .info-product {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.container-items .info-product h2 {
+  margin: auto;
+  font-size: 1.2em;
+}
+.container-items .info-product p {
+  margin: auto;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+.container-items .info-product button {
+  color: rgba(238, 236, 236, 0.9098039216);
+  background-color: rgba(15, 15, 15, 0.9137254902);
+}
+.container-items .info-product .button {
+  margin-bottom: 10px;
+}
+
 @media (min-width: 552px) and (max-width: 1023px) {
   .container_nav {
     display: none;
@@ -316,7 +377,7 @@ main .main__div-h2 .h2__inicio {
   }
   .grid__item1 {
     grid-area: item1;
-    background-size: cover;
+    object-fit: cover;
   }
   .grid__item2 {
     grid-area: item2;
@@ -331,6 +392,7 @@ main .main__div-h2 .h2__inicio {
   .img-grid {
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
   .h2__inicio {
     margin-top: 10px;
@@ -419,6 +481,14 @@ main .main__div-h2 .h2__inicio {
     transition: 0.5s;
     background-color: rgba(238, 236, 236, 0.9098039216);
     box-shadow: 1px 0 3px 1px rgba(15, 15, 15, 0.3647058824);
+  }
+  .container-items {
+    grid-template-columns: repeat(2, 300px);
+    gap: 30px;
+    justify-content: center;
+  }
+  footer {
+    margin-top: 40px;
   }
 }
 @media (max-width: 551px) {
@@ -537,6 +607,7 @@ main .main__div-h2 .h2__inicio {
   .img-grid {
     height: 100%;
     width: 100%;
+    background-image: cover;
   }
 }
 @media (min-width: 1024px) {
@@ -580,29 +651,31 @@ main .main__div-h2 .h2__inicio {
   .grid__container {
     display: grid;
     margin: 10px 60px 0px 60px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(100px, 350px));
     grid-template-rows: repeat(4, 200px);
     grid-template-areas: "item3 item3 item2 item2" "item3 item3 item2 item2" "item1 item1 item1 item1" "item1 item1 item1 item1";
     gap: 30px;
     margin-bottom: 50px;
+    justify-content: center;
   }
   .grid__item1 {
     grid-area: item1;
-    background-size: cover;
+    object-fit: cover;
   }
   .grid__item2 {
     grid-area: item2;
-    background-size: cover;
+    object-fit: cover;
     width: 100%;
   }
   .grid__item3 {
     grid-area: item3;
-    background-size: cover;
+    object-fit: cover;
     width: 100%;
   }
   .img-grid {
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
   .h2__inicio {
     margin-top: 10px;
@@ -697,6 +770,17 @@ main .main__div-h2 .h2__inicio {
     transition: 0.5s;
     background-color: rgba(238, 236, 236, 0.9098039216);
     box-shadow: 1px 0 3px 1px rgba(15, 15, 15, 0.3647058824);
+  }
+  .container-items {
+    grid-template-columns: repeat(2, 500px);
+    gap: 70px;
+    justify-content: center;
+  }
+  .container-items .item-venta img {
+    height: 400px;
+  }
+  footer {
+    margin-top: 50px;
   }
 }
 

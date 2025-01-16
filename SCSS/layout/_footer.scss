@@ -24,6 +24,7 @@ footer{
             text-align: center;
             color: $color-blanco2;
             margin-top: 15px;
+            font-size: 1em;
             } 
         }
     .footer__link{
@@ -32,7 +33,7 @@ footer{
         .logo-wpp{
             position: fixed;
             right: 20px;
-            bottom: 20px;
+            bottom: 10px;
             transition: 0.7s;
             
         &:hover{

@@ -21,7 +21,9 @@ main{
         display: flex;
         width: 100%;
         .h2__inicio{
-            font-weight: bold;
+            margin-top: 10px;
+            font-weight: 500;
+            font-family: $font;
             font-size: 1.5em;
             color: $color-negro;
             justify-items: center;
